@@ -19,7 +19,7 @@ namespace HPlusSport.API.Models
             modelBuilder.Entity<Order>().HasMany(c => c.Products);
             modelBuilder.Entity<Order>().HasOne(c => c.User);
             modelBuilder.Entity<User>().HasMany(c => c.Orders).WithOne(o => o.User).HasForeignKey(o => o.UserId);
-            //modelBuilder.Seed();
+            modelBuilder.Seed();
         }
 
 

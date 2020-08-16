@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace HPlusSport.API.Models
 {
@@ -9,7 +6,6 @@ namespace HPlusSport.API.Models
     {
         public int UserId { get; set; }
         public string Email { get; set; }
-
         public virtual List<Order> Orders { get; set; }
     }
 }

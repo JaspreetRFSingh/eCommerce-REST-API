@@ -13,7 +13,7 @@ namespace HPlusSport.API.Controllers
     //[Route("api/v{v:apiVersion}/[controller]")]
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly ShopContext _shopContext;
